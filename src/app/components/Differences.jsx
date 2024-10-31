@@ -37,7 +37,7 @@ export default function Differences() {
     };
 
     return (
-        <section className="px-16 py-32 text-center">
+        <section className="px-16 py-32 text-center md:block hidden">
             <h1 className="font-bold text-5xl">
                 Diferenças entre a lei <span className="text-orange-500">8.666 </span>
                 e a lei <span className="text-orange-500">14.133</span>

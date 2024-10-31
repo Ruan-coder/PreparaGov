@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 export default function Home() {
     return (
@@ -11,24 +10,40 @@ export default function Home() {
                 </video>
             </div>
 
-            <div className="z-40 grid md:grid-cols-2 grid-cols-1 items-center justify-between w-full">
-                <div className="grid grid-cols-1 gap-5 text-white px-16">
+            <div className="z-40 lg:w-1/2 md:w-2/3 w-full grid grid-cols-1 items-center justify-between">
+
+                <div className="md:hidden flex flex-col px-5">
+                    <div className="flex flex-col">
+                        <div className="flex flex-col">
+                            <label htmlFor="user" className="text-white">Usuário</label>
+                            <input type="text" name="user" id="user-input" placeholder="digite seu email" className=" h-12 bg-transparent border rounded-md px-3 text-white" />
+                        </div>
+                        <div className="flex flex-col py-5">
+                            <label htmlFor="user" className="text-white">Senha</label>
+                            <input type="password" name="password" id="password-input" placeholder="digite sua senha" className="h-12 bg-transparent border rounded-md px-3 text-white" />
+                        </div>
+                    </div>
+                    <button className='gradient-button flex flex-row'>Login
+                        <svg className="w-6 h-6 text-white dark:text-white ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div className="grid grid-cols-1 gap-5 text-white md:px-16 px-5 mt-10">
                     <h1 className="md:text-5xl text-4xl">
                         Automatize o seu planejamento de licitações com o <b className="text-orange-500">PreparaGov</b>
                     </h1>
                     <div >
                         <p >Conheça nossas estrátegias inovadoras para criação de documentos automaticamente. Solicite uma demonstração hoje
-                            e eleve o nível da sua licitação
+                            e eleve o nível da sua licitação.
                         </p>
                         <div>
                             <button className="gradient-button my-8">Demonstração</button>
-                            <button className="px-4 py-3 ml-3 border rounded-lg hover:bg-white hover:text-black transition duration-300 ">Já sou cliente</button>
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-center">
-                    <iframe src="https://www.youtube.com/embed/watch?v=iWD9-5olemw&t=1s" frameborder="0" className="video"></iframe>
-                </div>
+
             </div>
 
 
